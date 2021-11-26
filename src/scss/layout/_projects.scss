@@ -1,0 +1,62 @@
+.anchor{
+    display: block;
+    visibility: hidden;
+}
+
+.containerSectionProjects{
+    margin-top: 0px;
+    padding: 5% 10%;
+}
+
+.containerProjects{
+    top: 700px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.imageProject{
+    position: relative;
+    margin: 5% 10%;
+    width: 110%;
+    @media all and (min-width: 768px) {
+        margin: 25px;
+        width: 40%;
+    }
+    @media all and (min-width: 1280px) {
+        margin: 50px;       
+    }
+}
+
+.imageWeb{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    border: 3px solid $background-color-4;
+}
+
+.projectsSpan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .8; 
+    color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    transition: background ease .3s;
+    transition: all .5s;
+    text-align: center;
+    @media all and (min-width: 768px) {
+        &:hover {
+            background: $background-color-4;
+            color: $font-color-3;
+        }    
+    }
+}

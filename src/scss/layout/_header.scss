@@ -1,0 +1,112 @@
+.headerBackground {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  min-height: 600px;
+  background-color: $background-color-1;
+  position: relative;
+}
+
+.menuBar{
+  width: 100vw;
+  height: 10vh;
+}
+
+.containerMenu{
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  padding-right: 10vh;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60px;
+  background-color: $background-color-2;
+  animation-name: menu;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes menu {
+  from {
+      opacity: 0;
+      width: 0%;
+  }
+  to {
+      opacity: 1;
+      width: 100%;
+  }
+}
+
+.hidden{
+  position: fixed;
+  z-index: 20;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  height: 60px;
+  background-color: $background-color-2;
+  animation-name: menu-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes menu-out {
+  from {
+      opacity: 1;
+      width: 100%;
+  }
+  to {
+      opacity: 0;
+      width: 0%;
+  }
+}
+
+.linkMenu{
+  text-decoration: none;
+  margin: 10px;
+  color: $font-color-1;
+  white-space:nowrap;
+}
+
+.listMenu{
+  list-style: none;
+  margin:0;
+  padding: 0;
+  display: flex;
+  animation-name: list-in;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes list-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.hiddenList{
+  display:none;
+}
+
+.desktop{
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  animation-name: appearDesktop;
+  animation-timing-function: ease;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes appearDesktop {
+  from {
+     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

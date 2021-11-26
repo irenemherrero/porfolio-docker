@@ -1,0 +1,38 @@
+.anchor{
+    display: block;
+    visibility: hidden;
+    height: 40px;
+}
+
+.containerPresentation{
+    background-color: $background-color-3;
+    padding: auto;
+    width: 100vw;
+    text-align: center;
+    height: 50vh;
+    @media all and (min-width: 768px) {
+        padding: auto;
+    }
+    @media all and (min-width: 1280px) {
+        padding: auto;
+    }
+}
+
+.presentationText{
+    padding: 5% 15% 0%;
+    width: 100vw;
+    margin: auto;
+    z-index: 10;
+    background-color: $background-color-3;
+    @media all and (min-width: 768px) {
+        width: 80vw;
+    }
+}
+
+.fa-smile{
+    margin-left: 50%;
+    transform: scale(3);
+    color: $color-boton-2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

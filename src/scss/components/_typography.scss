@@ -1,0 +1,118 @@
+.fontPreTitle{
+  color: $font-color-1;
+  font-size: $font-size-peq-tab;
+  font-family: $font-family-3;
+  font-weight: $font-weight-medium;
+  margin: 0;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-xl;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-xl;
+  }
+}
+
+.fontTitle {
+  color: $font-color-4;
+  font-size: $font-size-xl-tab;
+  font-family: $font-family-1;
+  font-weight: $font-weight-medium;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-gig;
+  }
+   @media all and (min-width: 1280px) {
+    font-size: $font-size-gig;
+  }
+}
+
+.fontItemMenu {
+  color: $font-color-1;
+  font-size: $font-size-peq-tab;
+  font-family: $font-family-1;
+  font-weight: $font-weight-regular;
+  transition: color ease .5s;
+  &:hover {
+    color: $font-color-4;
+  }
+    @media all and (min-width: 768px) {
+    font-size: $font-size-big;
+  }
+  @media all and (min-width: 1280px) {
+    font-size: $font-size-big;
+  }
+}
+
+.fontTitleSkill{
+  font-size: $font-size-med-tab;
+  font-family: $font-family-3;
+  font-weight: $font-weight-bold;
+  margin: 0;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-xl;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-xl;
+  }
+}
+
+.fontListSkills{
+  color: $font-color-3;
+  font-size: $font-size-med;
+  font-family: $font-family-1;
+  font-weight: $font-weight-regular;
+}
+
+.fontText{
+  padding: 3%;
+  text-align: center;
+  color: $font-color-3;
+  font-size: $font-size-peq-tab;
+  font-family: $font-family-1;
+  font-weight: $font-weight-regular;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-med-tab;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-med-desk;
+  }
+}
+
+.fontTextHighlight{
+  color: $font-color-1;
+  font-size: $font-size-peq-tab;
+  font-family: $font-family-2;
+  font-weight: $font-weight-bold;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-med-tab;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-med-desk;
+  }
+}
+
+.paragraphTitle {
+  color: $font-color-1;
+  font-size: $font-size-xl;
+  font-family: $font-family-3;
+  font-weight: $font-weight-bold;
+  text-align: center;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-gig-tab;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-xxl-desk;
+  }
+}
+
+.footerLink{
+  color: $font-color-4;
+  font-size: $font-size-minim-tab;
+  font-family: $font-family-1;
+  font-weight: $font-weight-regular;
+    @media all and (min-width: 768px) {
+    font-size: $font-size-med;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-med;
+  }
+}

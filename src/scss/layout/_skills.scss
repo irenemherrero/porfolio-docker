@@ -1,0 +1,161 @@
+.generalSkillsList{
+    background-color: $background-color-3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+    @media all and (min-width: 1280px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+    }
+}
+
+.itemListGeneralSkills{
+    list-style: none;
+    border: 5px solid $background-color-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color-4;
+    border-radius: 10px;
+    width: 80vw;
+    padding: 30px;
+    @media all and (min-width: 768px) {
+        height: 450px;
+        width: 40vw;
+        margin: 0;
+        padding: 10% 10%;
+    }
+}
+
+.hiddeBox{
+    @media all and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.showBox1{
+    position: relative;
+    @media all and (min-width: 768px) {
+        animation-name: showBox1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        @keyframes showBox1 {
+            from {
+                left: -50%;
+            }
+            to {
+                left: 10%;
+            }
+        }
+    }
+}
+
+.showBox2{
+    position: relative;
+        @media all and (min-width: 768px) {
+            animation-name: showBox2;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        @keyframes showBox2 {
+            from {
+                left: 50%
+            }
+            to {
+                left: 10%;
+            }       
+        }
+    }
+}
+
+.titleGeneralSkill{
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    font-size: $font-weight-bold;
+    text-align: center;
+}
+
+.iconContainer{
+    border: 5px solid $color-boton-2;
+    color: $color-boton-1;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: $background-color-1;
+    @media all and (min-width: 768px) {
+    transition: background-color, color ease .2s;
+    height: 80px;
+    width: 70px;    
+        &:hover{
+            background-color: $background-color-4;
+            color: $color-boton-2;
+        }   
+    }
+}
+
+.icon {
+    left: 2%;
+    top:40%;
+    position:relative;
+    transform:translate(-50%, -50%);
+    transform:scale(2);
+}
+
+.skillsList{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.skill{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+    font-size: $font-size-peq-tab;
+}
+
+.checkbox{
+    margin-right: 10px;
+    background-color: $color-boton-1;
+    border: 3px solid $color-boton-2;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    @media all and (min-width: 768px) {
+        transition: background-color ease .3s;
+        &:hover{
+            background-color: $color-boton-2;
+        }
+    }
+}
+
+.fa-check{
+    transform: scale(0.6);
+    transform: translate(20%, -5%);
+    color: $color-boton-2;
+    @media all and (min-width: 768px) {
+        transition: color ease .1s;
+        &:hover{
+                color: $color-boton-1;
+        }
+    }
+}
+
+.skillName{
+    margin-top: 5px;
+}
