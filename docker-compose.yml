@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  portfolio-docker:
+    build: .
+    ports:
+     - "3000:3000"
+    environment:
+     - PORT=3000
+     - TYPE=dockerised with docker-compose
