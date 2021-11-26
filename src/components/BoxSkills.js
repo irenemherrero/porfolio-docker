@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import IconSkills from './IconSkills';
 import ItemSkills from './ItemSkills';
 
 class BoxSkills extends Component {
@@ -10,7 +9,6 @@ class BoxSkills extends Component {
         return (
             <div id={id}>
                 <li className="itemListGeneralSkills">
-                    <IconSkills icon={icon} />
                     <h3 className="titleGeneralSkill fontTitleSkill">{title}
                     </h3>
                     <ul className="skillsList fontListSkills">
