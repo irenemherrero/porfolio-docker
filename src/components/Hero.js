@@ -7,7 +7,7 @@ class Hero extends Component {
       <Fragment>
         <div className="heroTextContainer">
           <h1 className="fontPreTitle preTitleEffect">
-            Junior Front-End Developer
+            Front-End Developer
           </h1>
           <h2 className="fontTitle typewriter">Soy Irene Mateo.</h2>
           <img
